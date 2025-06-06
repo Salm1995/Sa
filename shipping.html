@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نموذج طلب شحن</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+      text-align: right;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h2>نموذج طلب شحن</h2>
+<form action="https://formspree.io/f/yourformid" method="POST">
+  <label>الاسم الكامل:</label>
+  <input type="text" name="الاسم" required>
+
+  <label>رقم الهاتف:</label>
+  <input type="tel" name="الهاتف" required>
+
+  <label>المدينة:</label>
+  <input type="text" name="المدينة" required>
+
+  <label>العنوان الكامل:</label>
+  <textarea name="العنوان" rows="3" required></textarea>
+
+  <label>تفاصيل إضافية:</label>
+  <textarea name="ملاحظات" rows="4"></textarea>
+
+  <button type="submit">إرسال الطلب</button>
+</form>
+
+</body>
+</html>
